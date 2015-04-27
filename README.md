@@ -8,3 +8,5 @@ rails console
 User.find(1)
 @current_user ||= User.find(1)
 ```
+
+when you call `current_user` variable multiple times in **one template page**.
