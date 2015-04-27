@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  root 'projects#index'
+  resources :projects
+
+  post 'log_out' => 'application#log_out'
+  post 'log_in' => 'application#log_in'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

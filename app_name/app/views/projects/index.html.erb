@@ -1,0 +1,13 @@
+<%= current_user.name if current_user %>
+
+<%= button_to 'log out', log_out_path %>
+<%= button_to 'log in', log_in_path %>
+
+<%= link_to 'new project', new_project_path %>
+
+<% @projects.each do |project| %>
+<p>
+  <%= project.name %>
+  <%= project.user.name %>
+</p>
+<% end %>
